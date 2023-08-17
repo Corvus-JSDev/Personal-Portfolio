@@ -1,0 +1,507 @@
+body{
+    overflow-x: hidden;
+    background-color: #15181f;
+    /* padding-bottom: 1000px; */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+* {
+    font-family: montserrat, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(235, 235, 235) !important;
+}
+h2{
+    font-family: 'League Spartan';
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+
+
+.slanted-background{
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/y-so-serious.png);
+    background-size: 600px 600px;
+    height: 850px;
+    width: 180%;
+    transform: rotate(-5deg);
+    position: absolute;
+    z-index: -1;
+    top: -200px;
+    left: -50px;
+}
+
+hr{
+    border: 2px solid black;
+    width: +125%;
+    position: relative;
+    left: -20px;
+}
+
+.hero-main-title {
+    color: white !important;
+}
+.hero-sub-desc{
+    font-size: 25px;
+    font-weight: 400;
+    opacity: 0.8;
+    color: white;
+}
+
+.typewriter-container{
+    display: inline-block;
+}
+.typewriter {
+    font-size: 3em;
+    letter-spacing: 6px;
+    font-family: monospace !important;
+    border-right: 5px solid white;
+
+    /* important bit */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s steps(19),
+               cursor .8s step-end infinite alternate;
+
+}
+@keyframes cursor {
+    50% {border-color: transparent;}
+}
+@keyframes typing {
+    from {width: 0;}
+}
+
+
+
+.underline-element{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    padding: 30px 0 8px;
+    position: relative;
+}
+.certificates-element{
+    position: relative;
+    bottom: -100px;
+}
+.card-body{
+    background-color: #2b1d4d;
+}
+
+.certificates-div h3{
+    font-weight: 600;
+}
+
+.underline-element::before{
+    content: "";
+    position: absolute;
+    left: 100px;
+    bottom: 13px;
+    width: 200px;
+    height: 17px;
+    transform: skew(-25deg) translateX(-50%);
+    background: rgb(201, 72, 46);
+    z-index: -1;
+
+}
+a.active {
+    background-color: rgb(201, 72, 46) !important;
+}
+a.active:hover{
+    background-color: rgb(235, 83, 52) !important;
+}
+button.btn-primary{
+    background-color: rgb(201, 72, 46) !important;
+}
+button.btn-primary:hover{
+    background-color: rgb(235, 83, 52) !important;
+}
+
+.skills-background{
+    width: 100%; height: auto;
+    background-color: #002d4d;
+    margin-top: 50px;
+    position: relative;
+    z-index: 0;
+}
+
+.main-skills-container{
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: auto;
+    padding: 50px 0px;
+}
+
+#memodiv{
+    height: auto; width: 630px;
+}
+.memo {
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+
+div ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+div > ul > li {
+    font-size: 30px;
+    font-weight: 900;
+}
+div > ul > p {
+    font-size: larger;
+    font-weight: 500;
+}
+
+.skills-listing{
+    display: flex;
+    flex-direction: row;    
+    gap: 450px;
+    margin: 50px 0px;
+    justify-content: center;
+    
+}
+
+.projects{
+    width: 100%; height: auto;
+}
+.projects-textbox{
+    padding: 0px 110px;
+}
+.span573{
+    color: rgb(205, 205, 205);
+    font-size: 20px;
+}
+.blurimg{
+    filter: blur(5px);
+}
+
+
+hr.featurette-divider{
+    border: 2px solid whitesmoke;
+    width: 80%;
+    border-radius: 20px;
+}
+
+
+.pricing-cont{
+    width: 100%; height: auto;
+
+}
+
+.card-body{
+    min-height: 260px; max-height: 335px;
+}
+.card-outline{
+    border-width: 0px !important;
+}
+
+
+.pricecard-head {
+    background-color: #1b0d3d;
+}
+
+
+#price-cards > div.col{
+    padding: 0px 35px;
+}
+#price-cards {
+    margin-bottom: 0px !important;
+}
+
+
+
+.top-element{
+    position: relative;
+    z-index: 20;
+}
+
+
+.contact-cont{
+    display: inline-flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.contact-form{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+    width: 755px; height: 405px;
+    pointer-events: auto;
+}
+.info-form{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 300px;
+    align-items: center;
+    position: relative;
+    z-index: 30;
+    pointer-events: auto;
+
+}
+.info-form > input{
+    height: 50px;
+    width: 300px;
+    position: relative;
+    background-color: #2a303d;
+    border-width: 0px;
+    padding: 8px;
+    color: #15181f;
+    z-index: 30;
+    pointer-events: auto;
+}
+#contact-message{
+    width: 400px; height: 400px;
+    resize: none;
+    background-color: #2a303d;
+    border-width: 0px;
+    padding: 10px;
+    position: relative;
+    z-index: 30;
+
+}
+button#send-message{
+    width: 75%; height: 40px;
+    margin-top: 20px;
+    background-color: rgb(201, 72, 46);
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-width: 0px;
+    position: relative;
+    border-radius: 20px;
+    z-index: 30;
+    pointer-events: auto;
+}
+#send-message:hover{
+    background-color: rgb(231, 82, 53);
+}
+#send-message:active{
+    background-color: rgb(255, 114, 85);
+}
+
+
+.about-me{
+    background-color: #2a303d;
+    padding: 30px;
+    min-width: 330px; min-height: 400px;
+}
+.about-me > h3{
+    font-weight: 600;
+}
+
+
+footer img{
+    width: 50px;
+}
+footer p{
+    color: white;
+    padding-left: 5px;
+}
+
+
+#backtotopbutton{
+    background-color: rgb(201, 72, 46);
+    border-width: 0px;
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-weight: bolder;
+}
+#backtotopbutton:hover{
+    background-color: rgb(231, 82, 53);
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    div div.project-img {
+        padding: 0px 30px;
+    }
+    div .projects-textbox {
+        width: 500px;
+        padding: 0px 50px;
+        font-size: 15px !important;
+    }
+    div .featurette-heading{
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .certificates-flex-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .certificates-card {
+        width: 70%;
+    }
+    .skills-listing{
+        gap: 150px;
+    }
+    .memo{
+        margin: 50px 0px;
+    }
+
+    .project-memo{
+        margin-bottom: 50px;
+    }
+    .top-pic{
+        display: inline-flex;
+        flex-direction: column-reverse !important;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #price-cards{
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+    .price-card-block{
+        width: 70%;
+    }
+    .contact-cont {
+        display: inline-flex;
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+    .about-me{
+        width: 70%;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+    body{
+        overflow-x: hidden;
+    }
+    .crowlogo{
+        margin-top: 15px;
+    }
+    .navbar547{
+        display: flex;
+        flex-direction: row wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .slanted-background{
+        top: -50px;
+    }
+    .container5427{
+        position: relative;
+        top: -30px;
+    }
+    .hero-main-title{
+        font-size: 23px;
+    }
+    .hero-sub-desc{
+        font-size: 18px;
+    }
+    .buttons-flex-box{
+        display: inline-flex !important;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    .underline-element{
+        font-size: 50px;
+        padding-left: 10px;
+    }
+    .underline-element::before{
+        left: 120px;
+        bottom: 15px;
+
+    }  
+    .certificates-card{
+        width: 85%;
+    }
+
+    .main-skills-container{
+        max-width: 400px;
+        position: relative;
+        top: -170px;
+    }
+    .main-skills-container li {
+        font-size: 25px;
+    }
+    .skills-listing{
+        flex-direction: column;
+        gap: 30px;
+    }
+    #mainmemo{
+        font-size: 0px;
+    }
+    .memo{
+        font-size: 20px;
+    }
+    .skills-background{
+        height: 1250px;
+    }
+    .top-pic{
+        display: inline-flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-cont {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .price-card-block{
+        width: 90%;
+    }
+    .contact-form{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    #contact-message{
+        width: 100%;
+        position: relative;
+        top: -80px;
+    }
+    #send-message {
+        position: relative;
+        top: 455px;
+    }
+    #backtotopbutton{
+        margin-top: 20px !important;
+    }
+    #socials {
+        margin-top: 20px;
+    }
+    .featurette-divider-div{
+        width: 108%
+    }
+}
